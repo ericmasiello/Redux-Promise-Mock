@@ -19,7 +19,7 @@ export const transformMockData = (origData, url, patternObj) => {
   return newData;
 };
 
-export default (props) => store => next => action => { //eslint-disable-line strict
+export const createMockMiddleware = (props) => store => next => action => { //eslint-disable-line strict
 
   if( Object.keys(props).indexOf(action.type) >= 0  && action.error) {
 
