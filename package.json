@@ -1,0 +1,38 @@
+{
+  "name": "Redux-Promise-Mock",
+  "version": "1.0.0",
+  "description": "Middleware meant to be used with Redux Promise that can be used to mock remote API calls with mock data.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist/* && webpack",
+    "lint": "eslint ./src --ext .js",
+    "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register",
+    "prepublish": "lint && test && build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ericmasiello@github.com/ericmasiello/Redux-Promise-Mock.git"
+  },
+  "keywords": [
+    "redux",
+    "promise",
+    "middleware",
+    "flux",
+    "mock"
+  ],
+  "author": "Eric Masiello <eric.j.masiello@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericmasiello/Redux-Promise-Mock/issues"
+  },
+  "homepage": "https://github.com/ericmasiello/Redux-Promise-Mock#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "mocha": "^2.5.3",
+    "webpack": "^1.13.1"
+  }
+}
