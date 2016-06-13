@@ -7,7 +7,7 @@
     "build": "rm -rf dist/index.js && webpack",
     "lint": "eslint ./src --ext .js",
     "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register",
-    "prepublish": "npm run build"
+    "prepublish": "npm run lint && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
