@@ -1,6 +1,6 @@
 {
   "name": "redux-promise-mock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Middleware meant to be used with Redux Promise that can be used to mock remote API calls with mock data.",
   "main": "dist/index.js",
   "scripts": {
